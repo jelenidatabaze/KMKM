@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ukázka phishingu – prezentace</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      width: 350px;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .warning {
+      background: #fee2e2;
+      color: #991b1b;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .info {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
+    .fake-url {
+      background: #e5e7eb;
+      padding: 8px;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-bottom: 15px;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="warning">
+      EDUKAČNÍ UKÁZKA – neslouží ke skutečnému sběru dat
+    </div>
+
+    <div class="fake-url">
+      https://secure-instagram-login-freebonus.cz
+    </div>
+
+    <h1>Přihlášení</h1>
+
+    <input type="text" placeholder="Email nebo uživatelské jméno" />
+    <input type="password" placeholder="Heslo" />
+
+    <button onclick="showAlert()">Přihlásit se</button>
+
+    <div class="info">
+      Tato stránka je pouze ukázka phishingového webu do školní prezentace.
+      Ukazuje typické znaky podvodu:
+      <ul>
+        <li>podezřelá URL adresa,</li>
+        <li>snaha vyvolat důvěru,</li>
+        <li>žádost o heslo.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function showAlert() {
+      alert('Toto je pouze edukativní ukázka phishingu do prezentace.');
+    }
+  </script>
+</body>
+</html>
